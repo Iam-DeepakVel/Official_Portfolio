@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/HeroImageDeepak.jpg";
 import { FaHeart } from "react-icons/fa";
-import {RiArrowRightSLine} from 'react-icons/ri'
+import { RiArrowRightSLine } from "react-icons/ri";
 
 const Home = () => {
   return (
@@ -15,15 +15,9 @@ const Home = () => {
             I'm Deepak
           </h2>
           <div className="flex flex-row items-center  text-xl pt-4 sm:text-3xl font-semibold text-gray-400">
-            <div className="text-4xl pr-4">
-            I 
-            </div>
-            <div className="cursor-pointer scale-105 duration-200">
-            <FaHeart  color="red" size={30}/> 
-            </div> 
-            <div className="pl-4"> 
-            Full Stack Web Development
-            </div> 
+            <div className="text-4xl pr-4">I</div>        
+            <FaHeart  color="red" size={30}/>            
+            <div className="pl-4">Full Stack Web Development</div>
           </div>
           <p className="text-gray-400 max-w-lg py-4">
             I have 1 year of experience in building web applications. I am
@@ -41,7 +35,9 @@ const Home = () => {
         </div>
 
         <div className="mt-4">
-          <img src={HeroImage} alt= "Deepak's Profile" 
+          <img
+            src={HeroImage}
+            alt="Deepak's Profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
         </div>
