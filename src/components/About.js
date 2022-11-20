@@ -23,7 +23,7 @@ const About = () => {
             people's problems. I've taken my experience in understanding people
             and their businesses and crafted custom-based software solutions to
             fulfilling their needs. I'm good enough at Front-End as well as
-            Back-End web development. I'm keep on building my knowledge on the
+            Back-End web development. I keep on building my knowledge on the
             latest Tech Stacks (MERN & JAM).
           </div>
         </div>
