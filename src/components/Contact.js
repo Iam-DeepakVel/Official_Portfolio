@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="flex w-full pt-24 sm:pt-48 pb-40 md:h-full p-4 bg-gradient-to-b from-gray-800 to-black text-white"
+      className="flex w-full pt-24 sm:pt-28 pb-40 md:h-full p-4 bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg flex  mx-auto">
         {/* Left section  */}
@@ -15,7 +15,7 @@ const Contact = () => {
               Contact
             </h2>
             <p className="w-full flex text-2xl   pt-6 pb-4  justify-start ml-3">
-              Submit the form below to get in touch with me
+              Submit the form below to get in touch with me !!
             </p>
           </div>
 
@@ -46,8 +46,7 @@ const Contact = () => {
               >
                 Your Email
               </label>
-             
-              
+
               <input
                 type="text"
                 name="email"
@@ -55,7 +54,6 @@ const Contact = () => {
                 id="default-input"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
-         
 
               <label
                 for="message"
@@ -80,8 +78,10 @@ const Contact = () => {
 
         {/* Right Section */}
         <div className="hidden md:flex items-center ">
-          <h2 className="flex items-center text-4xl font-Dance h-80   text-white">
-            “We don't just sell websites, we build websites that Sells”
+          <h2 className="flex items-center font-bold text-4xl font-Quote1 h-80   text-white">
+            “ We don't just sell websites,
+            <br />
+            we build websites that Sells ”
           </h2>
         </div>
       </div>

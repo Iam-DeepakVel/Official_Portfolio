@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full pt-20 sm:pt-24 md:h-screen  bg-gradient-to-b  from-gray-800 to-black text-white"
+      className="w-full pt-20 sm:pt-24 md:h-full  bg-gradient-to-b  from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto   flex flex-col  justify-center text-justify">
         <div className="pb-8">
@@ -47,6 +47,21 @@ const About = () => {
           </div>
         </div>
         {/* Paragraph 2 End */}
+
+        <div className="flex flex-row text-xl mt-10">
+          <div className="mt-[5px]">
+            <BiChevronsRight color="darkGray" />
+          </div>
+          <div className="ml-3 text-gray-300">
+            I love building new web apps and i am responsible for participating
+            in the complete life cycle of website develpment projects, and for
+            implementation and maintaining best practice procedures in all areas
+            of work. Also in charge of writing content for websites. I built
+            more than 10 landing pages using different technologies and learning
+            new skills to build more innovative and responsive web apps in
+            future!!
+          </div>
+        </div>
       </div>
     </div>
   );

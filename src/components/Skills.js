@@ -92,7 +92,7 @@ const Skills = () => {
     // Skills Container
     <div
       name="skills"
-      className="pt-24 sm:pt-24 bg-gradient-to-b from-gray-800  to-black w-full md:h-screen"
+      className="pt-24 sm:pt-24 bg-gradient-to-b from-gray-800  to-black w-full md:h-full"
     >
       {/* Skills section */}
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">

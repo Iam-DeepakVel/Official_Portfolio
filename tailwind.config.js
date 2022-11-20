@@ -8,6 +8,7 @@ module.exports = {
       shade: ["Fredericka the Great"],
       Roboto: ["Roboto Mono"],
       Dance: ["Dancing Script"],
+      Quote1: ["Courgette"]
     },
   },
   plugins: [],
