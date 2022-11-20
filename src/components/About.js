@@ -40,7 +40,7 @@ const About = () => {
             I am currently pursuing my BTech degree in Information Technology from Coimbatore Institute of Technology. I will graduate in 2024. I am  proficient in programming languages like
             C, C++. I have developed strong problem-solving skills, communication and interpersonal skills.  I built
             more than 10 landing pages using different technologies and learning
-            new skills to build more innovative and responsive web apps in
+            new skills to build more innovative and responsive web apps in the
             future!!
           </div>
         </div>
