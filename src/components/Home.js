@@ -28,12 +28,12 @@ const Home = () => {
             Express, mongoDB, eleventy, tailwindcss and PostgreSQL.
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md  cursor-pointer font-medium justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
-              Portfolio
+            <a  href="/DEEPAK RESUME.pdf" download={true}  className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md  cursor-pointer font-medium justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
+              My Resume
               <span className="group-hover:rotate-90 duration-300 ml-1 mt-[0.5px]">
                 <RiArrowRightSLine />
               </span>
-            </button>
+            </a>
           </div>
         </div>
 
