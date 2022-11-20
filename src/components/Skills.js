@@ -101,7 +101,7 @@ const Skills = () => {
             Skills
           </h2>
           <p className="w-full flex text-2xl pt-6 pb-4  justify-start ml-3">
-            These are the technologies I've worked with
+            These are the technologies I've worked with !!
           </p>
         </div>
 

@@ -14,12 +14,12 @@ const About = () => {
           </h2>
         </div>
         {/* Paragraph 1 */}
-        <div className="flex flex-row text-xl mt-10">
+        <div className="flex flex-row text-xl mt-5">
           <div className="mt-[5px]">
-            <BiChevronsRight color="darkGray"/>
+            <BiChevronsRight color="darkGray" />
           </div>
           <div className="ml-3 text-gray-300">
-            I'm a Web developer who loves to build software to solve other
+            Deepak is a Web developer who loves to build software to solve other
             people's problems. I've taken my experience in understanding people
             and their businesses and crafted custom-based software solutions to
             fulfilling their needs. I'm good enough at Front-End as well as
@@ -28,19 +28,17 @@ const About = () => {
           </div>
         </div>
         {/* Paragraph 1 End */}
-        
+
         <br />
-        
+
         {/* Paragraph 2 */}
-        <div className="flex flex-row text-xl mt-10">
+        <div className="flex flex-row text-xl mt-4">
           <div className="mt-[5px]">
             <BiChevronsRight color="darkGray" />
           </div>
           <div className="ml-3 text-gray-300">
-            I love building new web apps and i am responsible for participating
-            in the complete life cycle of website develpment projects, and for
-            implementation and maintaining best practice procedures in all areas
-            of work. Also in charge of writing content for websites. I built
+            I am currently pursuing my BTech degree in Information Technology from Coimbatore Institute of Technology. I will graduate in 2024. I am  proficient in programming languages like
+            C, C++. I have developed strong problem-solving skills, communication and interpersonal skills.  I built
             more than 10 landing pages using different technologies and learning
             new skills to build more innovative and responsive web apps in
             future!!
@@ -56,10 +54,9 @@ const About = () => {
             I love building new web apps and i am responsible for participating
             in the complete life cycle of website develpment projects, and for
             implementation and maintaining best practice procedures in all areas
-            of work. Also in charge of writing content for websites. I built
-            more than 10 landing pages using different technologies and learning
-            new skills to build more innovative and responsive web apps in
-            future!!
+            of work. Also in charge of writing content for websites. I believe in life-long learning and always try to find more
+            efficient ways of doing somehing. To find out more about what i can
+            do for you, check out my work below.
           </div>
         </div>
       </div>

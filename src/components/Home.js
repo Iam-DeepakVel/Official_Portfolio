@@ -22,7 +22,7 @@ const Home = () => {
             </div>        
             <div className="pl-4">Full Stack Web Development</div>
           </div>
-          <p className="text-gray-400 max-w-lg py-4">
+          <p className="text-gray-400 max-w-lg py-4 md:text-lg">
             I have 1 year of experience in building web applications. I am
             currently improving myself in technologies like React, Nodejs,
             Express, mongoDB, eleventy, tailwindcss and PostgreSQL.
@@ -37,7 +37,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 md:ml-12">
           <img
             src={HeroImage}
             alt="Deepak's Profile"
