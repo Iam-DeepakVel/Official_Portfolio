@@ -51,11 +51,11 @@ const About = () => {
             <BiChevronsRight color="darkGray" />
           </div>
           <div className="ml-3 text-gray-300">
-            I love building new web apps and i am responsible for participating
+            I love building new web apps and I am responsible for participating
             in the complete life cycle of website development projects, and for
-            implementation and maintaining best practice procedures in all areas
-            of work. Also in charge of writing content for websites. I believe in life-long learning and always try to find more
-            efficient ways of doing something. To find out more about what i can
+            implementation and maintaining the best practice procedures in all areas
+            of work. Also, in charge of writing content for websites. I believe in life-long learning and always try to find more
+            efficient ways of doing something. To find out more about what I can
             do for you, check out my work below.
           </div>
         </div>
