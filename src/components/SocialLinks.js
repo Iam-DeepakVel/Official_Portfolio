@@ -43,7 +43,7 @@ const SocialLinks = () => {
         </li>
         <li className="flex justify-between rounded-br-md items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-300">
           <a
-            href="/DeepakResume.pdf"
+            href="/DEEPAK RESUME.pdf"
             className="flex justify-between items-center w-full text-white"
             download={true}
             target="_blank"

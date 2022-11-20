@@ -5,11 +5,11 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full pt-12 md:pt-0  h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full pt-20 sm:pt-24 md:h-screen  bg-gradient-to-b  from-gray-800 to-black text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center text-justify">
+      <div className="max-w-screen-lg p-4 mx-auto   flex flex-col  justify-center text-justify">
         <div className="pb-8">
-          <h2 className="text-5xl ml-4 font-Dance font-bold inline border-b-4 border-gray-500 duration-200">
+          <h2 className="text-5xl ml-4 font-Dance font-bold inline border-b-4 border-gray-500">
             About
           </h2>
         </div>
@@ -28,7 +28,9 @@ const About = () => {
           </div>
         </div>
         {/* Paragraph 1 End */}
+        
         <br />
+        
         {/* Paragraph 2 */}
         <div className="flex flex-row text-xl mt-10">
           <div className="mt-[5px]">
@@ -36,7 +38,7 @@ const About = () => {
           </div>
           <div className="ml-3 text-gray-300">
             I love building new web apps and i am responsible for participating
-            in the full life cycle of new website develpment projects, and for
+            in the complete life cycle of website develpment projects, and for
             implementation and maintaining best practice procedures in all areas
             of work. Also in charge of writing content for websites. I built
             more than 10 landing pages using different technologies and learning

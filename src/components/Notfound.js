@@ -24,7 +24,6 @@ const Notfound = () => {
           <div className="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12">
             <img
               src="https://user-images.githubusercontent.com/43953425/166269493-acd08ccb-4df3-4474-95c7-ad1034d3c070.svg"
-              className=""
               alt="Page not found"
             />
           </div>

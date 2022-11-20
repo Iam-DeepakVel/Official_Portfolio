@@ -4,6 +4,10 @@ import Navbar from "./components/Navbar";
 import SocialLinks from "./components/SocialLinks";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
+import Portfolio from "./components/Portfolio";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -29,8 +33,12 @@ function App() {
       <>
       <Navbar />
       <Home />
-      <SocialLinks />
       <About />
+      <Portfolio/>
+      <Skills/>
+      <Experience/>
+      <Contact/>
+      <SocialLinks />
       </>
      }
     </div>
