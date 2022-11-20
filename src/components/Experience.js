@@ -49,7 +49,7 @@ const Experience = () => {
           <div className="flex flex-row text-md mt-2">
             <BsDot size={40} color="darkGray" />
             <p className="ml-2 mt-2 text-gray-300">
-              Learnt to use AWS EC2, lambda function, SES.
+              Learnt to use AWS EC2, lambda function, Simple Email Service(SES).
             </p>
           </div>
 
@@ -64,7 +64,7 @@ const Experience = () => {
           <div className="flex flex-row text-md mt-2">
             <BsDot size={40} color="darkGray" />
             <p className="ml-2 mt-2 text-gray-300">
-              Implemented Agile development process.
+              Implemented Agile development process for Software Development Life Cycle.
             </p>
           </div>
         </div>
