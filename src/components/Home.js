@@ -2,7 +2,6 @@ import React from "react";
 import HeroImage from "../assets/Home-Image/HeroImageDeepak.jpg";
 import { FaHeart } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
-import Typed from "react-typed";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -22,17 +21,7 @@ const Home = () => {
               <FaHeart color="red" size={30} />
             </div>
             <div className="pl-4">
-              <Typed
-                strings={[
-                  "Frontend Web Development",
-                  "Backend Web Development",
-                  "MERN Stack Development",
-                  "Programming with C/C++",
-                ]}
-                typeSpeed={100}
-                backSpeed={40}
-                loop
-              />
+             Full Stack Web Development
             </div>
           </div>
           <p className="text-gray-400 max-w-lg py-4 md:text-lg">
