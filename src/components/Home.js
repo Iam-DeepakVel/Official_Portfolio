@@ -2,6 +2,8 @@ import React from "react";
 import HeroImage from "../assets/Home-Image/HeroImageDeepak.jpg";
 import { FaHeart } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
+import Typed from "react-typed";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -17,10 +19,21 @@ const Home = () => {
           <div className="flex flex-row items-center  text-xl pt-4 sm:text-3xl font-semibold text-gray-400">
             <div className="text-4xl pr-4">I</div>
             <div className=" cursor-pointer hover:scale-125 duration-500">
-
-            <FaHeart  color="red" size={30}/>            
-            </div>        
-            <div className="pl-4">Full Stack Web Development</div>
+              <FaHeart color="red" size={30} />
+            </div>
+            <div className="pl-4">
+              <Typed
+                strings={[
+                  "Frontend Web Development",
+                  "Backend Web Development",
+                  "MERN Stack Development",
+                  "Programming with C/C++",
+                ]}
+                typeSpeed={100}
+                backSpeed={40}
+                loop
+              />
+            </div>
           </div>
           <p className="text-gray-400 max-w-lg py-4 md:text-lg">
             I have 1 year of experience in building web applications. I am
@@ -28,12 +41,25 @@ const Home = () => {
             Express, mongoDB, eleventy, tailwindcss and PostgreSQL.
           </p>
           <div>
-            <a  href="/DEEPAK RESUME.pdf" download={true}  className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md  cursor-pointer font-medium justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
+            <a
+              href="/DEEPAK RESUME.pdf"
+              download={true}
+              className="lg:hidden group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md  cursor-pointer font-medium justify-center bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
               My Resume
               <span className="group-hover:rotate-90 duration-300 ml-1 mt-[0.5px]">
                 <RiArrowRightSLine />
               </span>
             </a>
+
+            <Link to="portfolio" smooth duration={500}>
+              <div className="hidden lg:flex group text-white w-fit px-6 py-3 my-2 items-center rounded-md  cursor-pointer font-medium justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
+                Portfolio
+                <span className="group-hover:rotate-90 duration-300 ml-1 mt-[0.5px]">
+                  <RiArrowRightSLine />
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
 

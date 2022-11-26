@@ -1,4 +1,8 @@
 import React from "react";
+import { TfiTwitter } from "react-icons/tfi";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { FiGithub } from "react-icons/fi";
+import { BiMailSend } from "react-icons/bi";
 
 const Contact = () => {
   return (
@@ -72,12 +76,52 @@ const Contact = () => {
               <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 mt-4 mx-auto flex items-center rounded-md hover:scale-110 duration-100">
                 Let's Talk
               </button>
+              <p className="w-full rounded-lg mt-6 h-[0.7px] bg-gray-600" />
+              <div className="flex flex-col items-center justify-center w-full">
+                <h2 className="mt-4 text-gray-400">
+                  Get connected with me on Social Platforms!!
+                </h2>
+                <ul className="flex space-x-6 mt-4 text-gray-400 ">
+                  <a
+                    href="https://twitter.com/Iam_DeepakVel"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-gray-500 duration-300"
+                  >
+                    <TfiTwitter size={20} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/iamdeepakvel/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-gray-500 duration-300"
+                  >
+                    <SlSocialLinkedin size={20} />
+                  </a>
+                  <a
+                    href="https://github.com/Iam-DeepakVel/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-gray-500 duration-300"
+                  >
+                    <FiGithub size={20} />
+                  </a>
+                  <a
+                    href="mailto:deepakvel82@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-gray-500 duration-300"
+                  >
+                    <BiMailSend size={20} />
+                  </a>
+                </ul>
+              </div>
             </form>
           </div>
         </div>
 
         {/* Right Section */}
-        <div className="hidden md:flex items-center ">
+        <div className="hidden md:flex  items-center ">
           <h2 className="flex items-center font-bold text-4xl font-Quote1 h-80   text-white">
             “ We don't just sell websites,
             <br />

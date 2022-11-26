@@ -7,7 +7,7 @@ const About = () => {
       name="about"
       className="w-full pt-20 sm:pt-24 md:h-full  bg-gradient-to-b  from-gray-800 to-black text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto   flex flex-col  justify-center text-justify">
+      <div className="max-w-screen-lg p-4 mx-auto   flex flex-col  justify-center lg:text-justify">
         <div className="pb-8">
           <h2 className="text-5xl ml-4 font-Dance font-bold inline border-b-4 border-gray-500">
             About
@@ -18,7 +18,7 @@ const About = () => {
           <div className="mt-[5px]">
             <BiChevronsRight color="darkGray" />
           </div>
-          <div className="ml-3 text-gray-300">
+          <div className="ml-3 text-gray-300 ">
             Deepak is a Web developer who loves to build software to solve other
             people's problems. I've taken my experience in understanding people
             and their businesses and crafted custom-based software solutions to
@@ -28,11 +28,11 @@ const About = () => {
           </div>
         </div>
         {/* Paragraph 1 End */}
-
+                       
         <br />
 
         {/* Paragraph 2 */}
-        <div className="flex flex-row text-xl mt-4">
+        <div className="flex flex-row text-xl mt-4 ">
           <div className="mt-[5px]">
             <BiChevronsRight color="darkGray" />
           </div>
