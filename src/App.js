@@ -12,6 +12,8 @@ import Contact from "./components/Contact";
 
 
 function App() {
+  
+  // Splash Loader
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -19,6 +21,17 @@ function App() {
       setLoading(false);
     }, 3000);
   }, []);
+
+ //Disable Right Click
+  useEffect(() => {
+    const handleContextmenu = e => {
+        e.preventDefault()
+    }
+    document.addEventListener('contextmenu', handleContextmenu)
+    return function cleanup() {
+        document.removeEventListener('contextmenu', handleContextmenu)
+    }
+}, [ ])
 
   return (
     <div className="App">
