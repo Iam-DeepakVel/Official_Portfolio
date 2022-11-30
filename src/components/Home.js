@@ -17,16 +17,16 @@ const Home = () => {
             I'm Deepak
           </h2>
           <div className="flex flex-row items-center  text-xl pt-4 sm:text-3xl font-semibold text-gray-400">
-            <div className="text-4xl pr-4">I</div>
+            <div className="text-3xl md:text-4xl pr-4">I</div>
             <div className=" cursor-pointer hover:scale-125 duration-500">
-              <FaHeart color="red" size={30} />
+              <FaHeart color="red" size={27} />
             </div>
-            <div className="pl-4">
+            <div className="text-2xl pl-4">
               <Typed
                 strings={[
                   "Frontend Development",
                   "Backend Development",
-                  "Full Stack Development",
+                  "FullStack Development",
                 ]}
                 typeSpeed={60}
                 backSpeed={45}
