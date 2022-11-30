@@ -28,8 +28,8 @@ const Home = () => {
                   "Backend Development",
                   "Full Stack Development",
                 ]}
-                typeSpeed={40}
-                backSpeed={30}
+                typeSpeed={60}
+                backSpeed={45}
                 loop
               />
             </div>
