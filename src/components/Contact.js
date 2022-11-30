@@ -46,7 +46,7 @@ const Contact = () => {
               className="flex flex-col w-full  md:w-3/4"
             >
               <label
-                for="website-admin"
+                htmlFor="website-admin"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                
               >
@@ -63,7 +63,7 @@ const Contact = () => {
               />
 
               <label
-                for="input-group-1"
+                htmlFor="input-group-1"
                 class="block mb-2 mt-6 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Your Email
@@ -88,7 +88,7 @@ const Contact = () => {
               </span>
 
               <label
-                for="message"
+                htmlFor="message"
                 class="block mt-5 mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Your message
