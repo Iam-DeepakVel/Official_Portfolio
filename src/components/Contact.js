@@ -3,8 +3,37 @@ import { TfiTwitter } from "react-icons/tfi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FiGithub } from "react-icons/fi";
 import { BiMailSend } from "react-icons/bi";
+import validator from "validator";
 
 const Contact = () => {
+  const [emailError, setEmailError] = React.useState("");
+  const [valid,setValid] = React.useState(false);
+
+  const validateEmail = (e) => {
+    var email = e.target.value;
+    if (validator.isEmail(email)) {
+      setEmailError("Valid Email");
+      document.getElementById('valid').classList.remove('hidden')
+      document.getElementById('invalid').classList.add('hidden')
+      setValid(true);
+    } else {
+      setEmailError("Enter valid Email!");
+      document.getElementById('invalid').classList.remove('hidden')
+      document.getElementById('valid').classList.add('hidden')
+    }
+    };
+   
+    const handleSubmit = (e)=>{
+      e.preventdefault();
+      const name = e.target.name;
+      const message = e.target.message;
+      if(!(valid && name && message)) {
+        document.getElementById('submission').classList.remove('hidden')
+        return;
+      }
+    }
+      
+  
   return (
     <div
       name="contact"
@@ -28,10 +57,12 @@ const Contact = () => {
               action="https://getform.io/f/784f6408-5f77-43a9-bb33-d85652f901a7"
               method="POST"
               className="flex flex-col w-full  md:w-3/4"
+              onSubmit={handleSubmit}
             >
               <label
                 for="website-admin"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+               
               >
                 Your Name
               </label>
@@ -39,6 +70,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                required
                 placeholder="Deepak V"
                 id="default-input"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -54,10 +86,20 @@ const Contact = () => {
               <input
                 type="text"
                 name="email"
+                required
+                onChange={(e) => validateEmail(e)}
                 placeholder="name@email.com"
                 id="default-input"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               />
+              <span id="valid" className="hidden mt-2 text-sm text-green-300"
+              >
+                {emailError}
+              </span>
+              <span id="invalid" className="hidden mt-2 text-sm text-red-300"
+              >
+                {emailError}
+              </span>
 
               <label
                 for="message"
@@ -68,12 +110,17 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
+                required
                 rows="10"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Convey your message here..."
               ></textarea>
+               <span id="submission" className="hidden mt-2 text-sm text-red-300"
+              >
+                Please enter the details before submitting!
+              </span>
 
-              <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 mt-4 mx-auto flex items-center rounded-md hover:scale-110 duration-100">
+              <button type="submit" className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 mt-4 mx-auto flex items-center rounded-md hover:scale-110 duration-100">
                 Let's Talk
               </button>
               <p className="w-full rounded-lg mt-6 h-[0.7px] bg-gray-600" />
