@@ -7,7 +7,6 @@ import validator from "validator";
 
 const Contact = () => {
   const [emailError, setEmailError] = React.useState("");
-  const [valid,setValid] = React.useState(false);
 
   const validateEmail = (e) => {
     var email = e.target.value;
@@ -15,7 +14,6 @@ const Contact = () => {
       setEmailError("Valid Email");
       document.getElementById('valid').classList.remove('hidden')
       document.getElementById('invalid').classList.add('hidden')
-      setValid(true);
     } else {
       setEmailError("Enter valid Email!");
       document.getElementById('invalid').classList.remove('hidden')
@@ -23,16 +21,6 @@ const Contact = () => {
     }
     };
    
-    const handleSubmit = (e)=>{
-      e.preventdefault();
-      const name = e.target.name;
-      const message = e.target.message;
-      if(!(valid && name && message)) {
-        document.getElementById('submission').classList.remove('hidden')
-        return;
-      }
-    }
-      
   
   return (
     <div
@@ -57,7 +45,6 @@ const Contact = () => {
               action="https://getform.io/f/784f6408-5f77-43a9-bb33-d85652f901a7"
               method="POST"
               className="flex flex-col w-full  md:w-3/4"
-              onSubmit={handleSubmit}
             >
               <label
                 for="website-admin"
