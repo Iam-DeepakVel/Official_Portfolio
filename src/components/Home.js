@@ -3,7 +3,7 @@ import HeroImage from "../assets/Home-Image/HeroImageDeepak.jpg";
 import { FaHeart } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Link } from "react-scroll";
-import Typical from "react-typical";
+import Typed from "react-typed";
 
 const Home = () => {
   return (
@@ -22,14 +22,15 @@ const Home = () => {
               <FaHeart color="red" size={30} />
             </div>
             <div className="pl-4">
-              <Typical
-                steps={[
-                  "  Full Stack Web Development",
-                  1500,
-                  "Backend development",
-                  1500,
+              <Typed
+                strings={[
+                  "Frontend Development",
+                  "Backend Development",
+                  "Full Stack Development",
                 ]}
-                loop={Infinity}
+                typeSpeed={40}
+                backSpeed={30}
+                loop
               />
             </div>
           </div>
