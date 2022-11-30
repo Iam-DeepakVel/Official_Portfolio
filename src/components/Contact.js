@@ -21,7 +21,6 @@ const Contact = () => {
     }
     };
    
-  
   return (
     <div
       name="contact"
