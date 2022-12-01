@@ -56,7 +56,7 @@ const Portfolio = () => {
           <h2 className="text-5xl ml-4 font-Dance font-bold inline border-b-4 border-gray-500">
             Portfolio
           </h2>
-          <p className="w-full flex text-2xl   pt-6 pb-4  justify-start ml-3">
+          <p className="w-full flex text-2xl  text-gray-400 pt-6 pb-4  justify-start ml-3">
             Check out some of my work right here !!
           </p>
         </div>

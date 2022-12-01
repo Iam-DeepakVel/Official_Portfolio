@@ -34,7 +34,7 @@ const Contact = () => {
             <h2 className="text-5xl ml-4 font-Dance font-bold inline border-b-4 border-gray-500">
               Contact
             </h2>
-            <p className="w-full flex text-2xl   pt-6 pb-4  justify-start ml-3">
+            <p className="w-full flex text-2xl text-gray-400 pt-6 pb-4  justify-start ml-3">
               Submit the form below to get in touch with me !!
             </p>
           </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Convey your message here..."
               ></textarea>
-               <span id="submission" className="hidden mt-2 text-sm text-red-300"
+               <span id="submission" className="hidden mt-2 text-sm  text-red-300"
               >
                 Please enter the details before submitting!
               </span>

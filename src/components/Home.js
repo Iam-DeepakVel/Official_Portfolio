@@ -34,10 +34,13 @@ const Home = () => {
               />
             </div>
           </div>
-          <p className="text-gray-400 max-w-lg py-4 md:text-lg">
+          <p className="text-gray-300 max-w-lg py-4 md:text-lg">
             I have 1 year of experience in building web applications. I am
-            currently improving myself in technologies like React, Nodejs,
-            Express, mongoDB, eleventy, tailwindcss and PostgreSQL.
+            currently improving myself in technologies like <span className="text-white font-semibold">
+            React,
+            Nodejs, Express, MongoDB, Eleventy, Tailwindcss 
+            </span> and {" "}
+            <span className="text-white font-semibold">PostgreSQL.</span>
           </p>
           <div>
             <a

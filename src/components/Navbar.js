@@ -75,7 +75,12 @@ const Navbar = () => {
                 className="cursor-pointer capitalize text-3xl text-gray-500 hover:scale-105 hover:text-white duration-200"
                 key={item.id}
               >
-                <Link onClick={()=>setNav(!nav)} to={item.link} smooth duration={500}>
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={item.link}
+                  smooth
+                  duration={500}
+                >
                   {item.link}
                 </Link>
               </li>
