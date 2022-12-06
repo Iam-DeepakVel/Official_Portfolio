@@ -12,7 +12,7 @@ const Portfolio = () => {
       id: 1,
       src: Web1,
       demoLink:"https://eleventybasicwebsite.netlify.app/",
-      codeLink:"https://github.com/Iam-DeepakVel/Eleventy-Tailwind"
+      codeLink:"https://github.com/Iam-DeepakVel/Eleventy-Tailwind",
     },
     {
       id: 2,

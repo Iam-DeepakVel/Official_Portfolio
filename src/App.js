@@ -8,9 +8,6 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-
-
-
 function App() {
   
   // Splash Loader
@@ -45,14 +42,14 @@ function App() {
     </div>
       :
       <>
-      <Navbar />
-      <Home />
-      <About />
+      <Navbar/>
+      <Home/>
+      <About/>
       <Portfolio/>
       <Skills/>
       <Experience/>
       <Contact/>
-      <SocialLinks />
+      <SocialLinks/>
       </>
      }
     </div>
