@@ -9,11 +9,21 @@ const Experience = () => {
       className="pt-24 sm:pt-20 w-full md:h-full bg-gradient-to-b  from-black to-gray-800 text-white"
     >
       <div className="max-w-screen-lg flex flex-col  justify-center w-full h-full mx-auto p-4">
-        <div className="pb-12">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.7 }}
+          variants={{
+            hidden: { opacity: 0, x: -70 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="pb-12"
+        >
           <h2 className="text-5xl ml-4 font-Dance font-bold inline border-b-4 border-gray-500">
             Experience
           </h2>
-        </div>
+        </motion.div>
 
         {/* Skematix Technologies */}
         <motion.div
@@ -22,8 +32,8 @@ const Experience = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7 }}
           variants={{
-            hidden: { opacity: 0, x: -80 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: +80 },
+            visible: { opacity: 1, y: 0 },
           }}
           className="shadow-lg important hover:scale-105 duration-200 py-4 rounded-lg shadow-gray-100"
         >
@@ -86,10 +96,10 @@ const Experience = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: +80 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: +90 },
+            visible: { opacity: 1, y: 0 },
           }}
           className="mt-8 sm:mt-14 shadow-lg hover:scale-105 duration-200 py-5 rounded-lg shadow-gray-100"
         >

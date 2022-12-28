@@ -74,26 +74,18 @@ const Portfolio = () => {
         </motion.div>
 
         {/* Card Section */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.7 }}
-          variants={{
-            hidden: {},
-            visible: {
-              transition: { staggerChildren: 0.3 },
-            },
-          }}
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0"
-        >
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {/* Card */}
           {showCases.map(({ id, src, demoLink, codeLink }) => {
             return (
               <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 0.7 }}
                 variants={{
-                  hidden: { opacity: 0, scale: 0.8 },
-                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, x: -60 },
+                  visible: { opacity: 1, x: 0 },
                 }}
                 key={id}
                 className="shadow-md shadow-gray-600 rounded-lg"
@@ -124,7 +116,7 @@ const Portfolio = () => {
               </motion.div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

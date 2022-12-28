@@ -16,6 +16,11 @@
 @layer base {
   html {
     font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    position:relative;
   }
 }
 

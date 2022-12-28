@@ -98,14 +98,16 @@ const Skills = () => {
     >
       {/* Skills section */}
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <motion.div initial="hidden"
+        <motion.div
+          initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
-          }} >
+          }}
+        >
           <h2 className="text-5xl ml-4 font-Dance font-bold inline border-b-4 border-gray-500">
             Skills
           </h2>
@@ -118,7 +120,8 @@ const Skills = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
+          onAnimationEnd
           transition={{ duration: 0.7 }}
           variants={{
             hidden: {},
@@ -133,7 +136,7 @@ const Skills = () => {
             return (
               <motion.div
                 variants={{
-                  hidden: { opacity: 0, scale: 0.8 },
+                  hidden: { opacity: 0, scale: 0.4 },
                   visible: { opacity: 1, scale: 1 },
                 }}
                 key={id}

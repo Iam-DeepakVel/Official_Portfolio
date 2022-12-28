@@ -28,8 +28,8 @@ const About = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
           }}
           className="flex flex-row text-xl mt-5"
         >
@@ -56,8 +56,8 @@ const About = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
           }}
           className="flex flex-row text-xl mt-4 "
         >
@@ -82,8 +82,8 @@ const About = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.7 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
           }}
           className="flex flex-row text-xl mt-10"
         >
