@@ -1,5 +1,6 @@
 import React from "react";
 import { BsDot } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
@@ -15,7 +16,17 @@ const Experience = () => {
         </div>
 
         {/* Skematix Technologies */}
-        <div className="shadow-lg hover:scale-105 duration-200 py-4 rounded-lg shadow-gray-100">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.7 }}
+          variants={{
+            hidden: { opacity: 0, x: -80 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="shadow-lg important hover:scale-105 duration-200 py-4 rounded-lg shadow-gray-100"
+        >
           <div className="flex text-black  justify-between">
             <h2 className="text-2xl font-bold text-gray-400 pl-4">
               Skematix Technologies
@@ -64,13 +75,24 @@ const Experience = () => {
           <div className="flex flex-row text-md mt-2">
             <BsDot size={40} color="darkGray" />
             <p className="ml-2 mt-2 text-gray-300">
-              Implemented Agile development process for Software Development Life Cycle.
+              Implemented Agile development process for Software Development
+              Life Cycle.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Neophron Technologies */}
-        <div className="mt-8 sm:mt-14 shadow-lg hover:scale-105 duration-200 py-5 rounded-lg shadow-gray-100">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 0.7 }}
+          variants={{
+            hidden: { opacity: 0, x: +80 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="mt-8 sm:mt-14 shadow-lg hover:scale-105 duration-200 py-5 rounded-lg shadow-gray-100"
+        >
           <div className="flex text-black  justify-between">
             <h2 className="text-2xl font-bold text-gray-400 pl-4">
               Neophron Technologies
@@ -114,7 +136,7 @@ const Experience = () => {
               hosting service like Github
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
