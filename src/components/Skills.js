@@ -100,16 +100,17 @@ const Skills = () => {
     },
     {
       id: 14,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-500",
-    },
-    {
-      id: 15,
       src: aws,
       title: "AWS",
       style: "shadow-gray-400 items-center flex flex-col justify-center",
     },
+    {
+      id: 15,
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-500",
+    },
+  
   ];
 
   return (
