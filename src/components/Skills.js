@@ -11,6 +11,10 @@ import postgres from "../assets/Skills/postgres.png";
 import aws from "../assets/Skills/aws.png";
 import git from "../assets/Skills/git.png";
 import github from "../assets/Skills/github.png";
+import nextjs from "../assets/Skills/nextjs.png"
+import postman from "../assets/Skills/postman.png"
+import firebase from "../assets/Skills/firebase.png"
+
 
 import { motion } from "framer-motion";
 
@@ -42,48 +46,66 @@ const Skills = () => {
     },
     {
       id: 5,
+      src: nextjs,
+      title: "Next",
+      style: "shadow-slate-50",
+    },
+    {
+      id: 6,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
-      id: 6,
+      id: 7,
       src: node,
       title: "Node",
       style: "shadow-green-400",
     },
     {
-      id: 7,
+      id: 8,
       src: express,
       title: "Express",
       style: "shadow-gray-400",
     },
     {
-      id: 8,
+      id: 9,
+      src: firebase,
+      title: "Firebase",
+      style: "shadow-yellow-300",
+    },
+    {
+      id: 10,
       src: mongodb,
       title: "mongoDB",
       style: "shadow-green-400",
     },
     {
-      id: 9,
+      id: 11,
       src: postgres,
       title: "PostgreSQL",
       style: "shadow-blue-600",
     },
     {
-      id: 10,
-      src: git,
-      title: "Git",
-      style: "shadow-orange-500",
+      id: 12,
+      src: postman,
+      title: "Postman",
+      style: "shadow-orange-400",
     },
     {
-      id: 11,
+      id: 13,
+      src: git,
+      title: "Git",
+      style: "shadow-red-500",
+    },
+    {
+      id: 14,
       src: github,
       title: "GitHub",
       style: "shadow-gray-500",
     },
     {
-      id: 12,
+      id: 15,
       src: aws,
       title: "AWS",
       style: "shadow-gray-400 items-center flex flex-col justify-center",
