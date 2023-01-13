@@ -46,15 +46,20 @@ const Home = () => {
             </div>
           </div>
           <p className="text-gray-300 max-w-lg py-4 md:text-lg">
-            I have 1 year of experience in building web applications. I am
-            currently improving myself in technologies like{" "}
+            "Welcome to my portfolio! I am a web developer with 1 year of
+            experience building dynamic and responsive web applications. I am
+            continuously expanding my skillset, currently focusing on
+            technologies such as{" "}
             <span className="text-white font-semibold">
-              React, Nodejs, Express, MongoDB, Eleventy, Tailwindcss
+              {" "}
+              React, Node.js, Express, MongoDB, Eleventy, Tailwind CSS, and{" "}
+              <span className="text-white font-semibold">PostgreSQL.</span>
             </span>{" "}
-            and <span className="text-white font-semibold">PostgreSQL.</span>
+            Here, you will find a collection of my past projects and my
+            experiences. Thanks for visiting!"{" "}
           </p>
           <div>
-            <a  
+            <a
               href="/DEEPAK RESUME.pdf"
               download={true}
               className="lg:hidden group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md  cursor-pointer font-medium justify-center bg-gradient-to-r from-cyan-500 to-blue-500"
