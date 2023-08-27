@@ -2,4 +2,4 @@ This GitHub repository contains the source code for an official portfolio websit
 
 Porfolio is live ✨ and accessible at the URL https://deepakwings.netlify.app.
 
-This is my portfolio V1. I have recently developed my portfolio V2, which is currently live at ❤️✨ https://iamdeepakvel.vercel.app. 
+This is my portfolio V1. I have recently developed my portfolio V2, which is currently live at ❤️✨ https://iamdeepak.tech. 
